@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="64" height="64" shape-rendering="crispEdges">
+  <!-- Speaker Body -->
+  <path d="M2 5h3v6H2z" fill="#000000" />
+  <path d="M5 4h1v8H5z" fill="#000000" />
+  <path d="M6 3h1v10H6z" fill="#000000" />
+  <path d="M7 2h2v12H7z" fill="#000000" />
+  
+  <!-- Sound Waves (Jersey 10 style stepped curves) -->
+  <!-- Inner Wave -->
+  <path d="M11 6h1v4h-1z" fill="#000000" />
+  <path d="M11 5h1v1h-1z" fill="#000000" />
+  <path d="M11 10h1v1h-1z" fill="#000000" />
+  
+  <!-- Outer Wave -->
+  <path d="M13 4h1v8h-1z" fill="#000000" />
+  <path d="M13 3h1v1h-1z" fill="#000000" />
+  <path d="M13 12h1v1h-1z" fill="#000000" />
+</svg>

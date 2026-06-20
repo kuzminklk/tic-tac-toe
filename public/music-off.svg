@@ -1,0 +1,7 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- Speaker body -->
+  <rect x="2" y="6" width="4" height="12" fill="#060608"/>
+  <rect x="6" y="4" width="4" height="16" fill="#060608"/>
+  <!-- Mute slash -->
+  <rect x="10" y="2" width="2" height="20" fill="#060608" transform="rotate(45 11 12)"/>
+</svg>

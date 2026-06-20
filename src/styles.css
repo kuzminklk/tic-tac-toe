@@ -1,0 +1,176 @@
+
+
+/* ————————— Structure ————————— 
+1. Typography
+2. Layout
+3. Colors
+*/
+
+
+/* ——— Typography ——— */
+
+html, button {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: calc(24px + 1.25vw);
+}
+
+button {
+  cursor: pointer;
+}
+
+.board button {
+  font-size: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* ——— Layout ——— */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* — Board — */
+
+.board-and-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* — Info — */
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ol {
+
+}
+
+h3 {
+  margin: 0;
+}
+
+
+/* — Music — */
+
+.music {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.music .toggle img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+
+/* ——— Colors ——— */
+/* Color pallete: https://lospec.com/palette-list/aap-64 */
+
+:root {
+  --color-x: #b4202a;
+  --color-o: #285cc4;
+  --primary-color: #fff;
+  --secondary-color: #060608;
+  --sub-secondary-color: #333941;
+}
+
+html {
+  color: var(--secondary-color);
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+/* — Buttons — */
+
+button {
+  background-color: var(--primary-color);
+  border: 0.25rem solid var(--secondary-color);
+}
+
+button:focus{
+  outline: none;
+}
+
+li:not(:first-child) button {
+  border-top: none;
+}
+
+.history button:hover {
+  border-bottom: 0.5rem solid var(--secondary-color);
+}
+
+.board .cell:hover {
+  border-bottom: 0.5rem solid var(--secondary-color);
+}
+
+.row:not(:first-child) .cell {
+  border-top: none;
+}
+
+.row .cell:not(:first-child) {
+  border-left: none;
+}
+
+/* — Cross and circle — */
+
+.x {
+  color: var(--color-x);
+}
+
+.o {
+  color: var(--color-o);
+}
+
+/* — Music — */
+
+.music button.toggle {
+  border: none;
+}
+
+.music button.toggle:hover {
+  border-bottom: 0.25rem solid var(--secondary-color);
+}
