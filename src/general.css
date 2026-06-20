@@ -1,10 +1,12 @@
 
 
+
 /* ————————— Structure ————————— 
 1. Typography
 2. Layout
 3. Colors
 */
+
 
 
 /* ——— Typography ——— */
@@ -74,16 +76,21 @@ body {
   height: 2rem;
 }
 
-/* — Info — */
+/* — History — */
 .history {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 
 ol {
+  padding: 0;
+}
 
+li, li button {
+  width: 100%;
 }
 
 h3 {

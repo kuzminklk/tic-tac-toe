@@ -1,0 +1,18 @@
+
+
+@media (max-width: 640px) {
+	/* — Typography — */
+	html, button {
+		font-size: calc(32px + 2vw);
+	}
+
+	/* — Layout — */
+	.game {
+		flex-direction: column;
+		margin: 4rem;
+	}
+
+	.board-and-status {
+		margin: 1rem;
+	}
+}
