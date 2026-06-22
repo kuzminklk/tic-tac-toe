@@ -1,4 +1,7 @@
 
+# Bootstrap Vite project
+pnpm create vite
+
 # Install dependencies
 pnpm install
 
