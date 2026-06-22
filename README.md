@@ -22,5 +22,6 @@ Finished, deployed
 - HTML, CSS, JavaScript, React by me (kuzminklk)
 - Debugging, SVG, music by me via AI (Gemini 3.5 Flash, Raptor mini (Preview))
 
+
 ### Usage
 Appropriate commands in ```./commands.sh``` 
