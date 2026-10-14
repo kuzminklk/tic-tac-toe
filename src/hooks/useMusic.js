@@ -1,31 +1,28 @@
+import { useEffect, useRef, useCallback } from "react"
 
+export function useMusic(source, { loop = false, volume = 1 } = {}) {
+  const audioReference = useRef(null)
 
-import {useEffect, useRef, useCallback} from "react";
+  useEffect(() => {
+    const audio = new Audio(source)
+    audio.loop = loop
+    audio.volume = volume
+    audio.preload = "auto"
+    audioReference.current = audio
 
+    return () => {
+      audio.pause()
+      audioReference.current = null
+    }
+  }, [source, loop, volume])
 
-export function useMusic(source, {loop=false, volume=1} = {}) {
-	const audioReference = useRef(null);
+  const play = useCallback(() => {
+    audioReference.current?.play().catch(() => {})
+  }, [])
 
-	useEffect(() => {
-		const audio = new Audio(source);
-		audio.loop = loop;
-		audio.volume = volume;
-		audio.preload = "auto";
-		audioReference.current = audio;
+  const pause = useCallback(() => {
+    audioReference.current?.pause()
+  }, [])
 
-		return () => {
-			audio.pause();
-			audioReference.current = null;
-		};
-	}, [source, loop, volume]);
-
-	const play = useCallback(() => {
-		audioReference.current?.play().catch(() => {});
-	}, []);
-
-	const pause = useCallback(() => {
-		audioReference.current?.pause();
-	}, []);
-
-	return {play, pause, isReady: !!audioReference.current};
+  return { play, pause, isReady: !!audioReference.current }
 }

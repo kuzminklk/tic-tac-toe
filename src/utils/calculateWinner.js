@@ -1,4 +1,3 @@
-
 /**
  * @summary Calculate the winner of Tic-Tac-Toe
  */
@@ -11,13 +10,13 @@ export function calculateWinner(cells) {
     [1, 4, 7],
     [2, 5, 8],
     [0, 4, 8],
-    [2, 4, 6]
-  ];
+    [2, 4, 6],
+  ]
   for (let i = 0; i < lines.length; i++) {
-    const [a, b, c] = lines[i];
+    const [a, b, c] = lines[i]
     if (cells[a] && cells[a] === cells[b] && cells[a] === cells[c]) {
-      return cells[a];
+      return cells[a]
     }
   }
-  return null;
+  return null
 }
