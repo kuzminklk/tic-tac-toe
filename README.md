@@ -1,3 +1,5 @@
+## About
+
 ### Description
 
 Tic-Tac-Toe game Web application built via React
@@ -10,11 +12,23 @@ Part of React documentation and as submodule in [appropriate repository](https:/
 
 HTML, CSS, JavaScript, React, SVG, AI (Gemini 3.5 Flash, Raptor mini (Preview), for development)
 
+### Technologies
+
+Development: Visual Studio Code  
+Programming languages: JavaScript  
+Framework: React  
+Markup languages: HTML, CSS  
+Vector graphics: SVG  
+Formatting: “.editorconfig”, “.vscode/…”, Prettier, Ruff  
+Version Control: Git, GitHub
+
+## State
+
 ### Status
 
 Finished, deployed
 
-### Development Path
+### Path
 
 1. Completed project from documentation material
 2. Develop visual design, music and click sound functionality
